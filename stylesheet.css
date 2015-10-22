@@ -1,0 +1,61 @@
+.nav a {
+    color: #5a5a5a;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 14px 10px;
+    text-transform: uppercase;
+}
+
+.nav li {
+    display: inline;
+    list-style-type: none;
+}
+
+.jumbotron {
+    background-image: url(pictures/backgroundbarbell.jpg);
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.jumbotron h1 {
+    color: white;
+    font-size: 48px;
+    font-family: "Shift", sans-serif;
+    font-weight: bold;
+}
+
+.jumbotron p {
+    font-size: 20px;
+    color: white;
+}
+
+.page-menu {
+    background-color: #f7f7f7;
+}
+
+.page-menu h3 {
+    font-family: 'Shift', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.page-menu a {
+    color: #00b0ff;
+}
+
+.page-menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#repMax {
+    width: auto;
+    height: auto;
+    float:left;
+}
+
+#repMaxPercent {
+    width: auto;
+    float:left;
+}

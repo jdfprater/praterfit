@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+    
+        <title>1RM Calculator</title>
+        <link rel="stylesheet" href="../stylesheet.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <script src="../js/one_rm.js" type="text/javascript"></script>
+    </head>
+    
+    <body>
+        
+        <div class="nav">
+            <div class="container">
+                <ul class="pull-left">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="calculators.html">Calculators</a></li>
+                </ul>
+                <ul class="pull-right">
+                    <li><a href="#">Novice 5/10/15</a></li>
+                    <li><a href="#">Intermediate 5/10/15</a></li>
+                    <li><a href="#">Advanced 5/10/15</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="jumbotron">
+            <div class="container">
+                <h1>PraterFit</h1>
+                <p>Don't be stupid.</p>
+            </div>
+        </div>
+        
+        <div class="page-menu">
+            <div class="container">
+                <h2>Bryzcki One Rep Max Calculator</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <h3>1 RM Max Protocol</h3>
+                            <p>Before you start a weight training program, it is a good idea to test your 1RM (1 rep max). This is the theoretical (or practical) amount of weight you can lift for just one rep with perfect form.</p>
+                                <p>Follow these steps:</p>
+                                <ol>
+                                    <li>Warm up thoroughly.</li>
+                                    <li>Make sure you've had 24 hours of rest from your last lifting session.</li>
+                                    <li>Perform of an exercise with a weight of which at least 5 repetitions can be achieved. Do likewise with all exercises.</li>
+                                    <li>Incrementally add a small amount of weight over subsequent sets, of each exercise, until, at a certain weight, no repetition can be achieved. The weight lifted before this set would be the 1RM. Before each 1RM test set allow for 3-5 minutes rest.</li>
+                                    <li>Document all 1RMs in a training diary.</li>
+                                    <li>Re-test every 5-6 weeks to monitor training progress. The same equipment and exercises should be used during successive testings.</li>
+                                </ol>
+                                <p>If you get something like 3 reps on your test, you can predict what your 1RM would be with a calculator like the one created above.</p>
+                    
+                    </div>
+                    
+                    
+                    <div class="col-md-4">
+                            <h3>Enter data collected from the 1RM Max Protocol.</h3>
+                            <p>Repetitions must be between 1 and 10.</p>
+                        
+                            <form id="wtForm">
+                                Weight Lifted: <input type="number" name="wt"><br>
+                                Reps Performed: <input type="number" name="reps"><br>
+
+                                <input type="button" onclick="rmCalc()" value="Submit">
+                            </form>
+                    </div>
+                    
+                    <div class="col-md-4">
+                            <div id="output">
+                                 <h3>Result:</h3>
+                                     <div id="repMaxPercent"></div>
+                                     <div id="repMax"></div>
+                             </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </body>
+</html>
+                                                                                                   
+                        
+                            
