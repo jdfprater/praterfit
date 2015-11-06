@@ -19,9 +19,9 @@
                     <li><a href="calculators.html">Calculators</a></li>
                 </ul>
                 <ul class="pull-right">
-                    <li><a href="novice.html">Novice 5/10/15</a></li>
-                    <li><a href="intermediate.html">Intermediate 5/10/15</a></li>
-                    <li><a href="advanced.html">Advanced 5/10/15</a></li>
+                    <li><a href="#">Novice 5/10/15</a></li>
+                    <li><a href="#">Intermediate 5/10/15</a></li>
+                    <li><a href="#">Advanced 5/10/15</a></li>
                 </ul>
             </div>
         </div>
@@ -36,92 +36,119 @@
         <div class="page-menu">
             <div class="container">
                 <h2>Mifflin-St. Jeor Calorie BMR and TDEE Calculator for Weight Loss and Muscle Gain</h2>
-                <div class="row">
-                    <div class="col-md-3">
-                            <h3>Step 1: Estimate BMR</h3>
-                            <p>Enter your information to caclulate your body's caloric needs</p>
-                            <form id="bmrForm">
-                               <input type="radio" name="gender" value="male" checked>Male
-                               <br>
-                               <input type="radio" name="gender" value="female" checked>Female
-                               <br>
-                               Weight in lbs.: <input type="number" name="wt"><br>
-                               Height in inches: <input type="number" name="ht"><br>
-                               Age: <input type="number" name="age"><br>
-                               <br>
-                            </form>
+                
+                        <div>
+                        <h3>Step 1: Estimate BMR</h3>
+                          <p>Enter your information to calculate yoru body'd caloric needs:</p>  
+                        <form id="bmrForm">
+                          <table class="table table-bordered">
+                            <thead>
+                              <tr>
+                                <th>Gender</th>
+                                <th>Weight (in lbs.):</th>
+                                <th>Height (in inches):</th>
+                                <th>Age:</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>Male <input type="radio" name="gender" value="male" checked><br>
+                                    Female <input type="radio" name="gender" value="female"></td>
+                                <td><input type="number" name="wt"></td>
+                                <td><input type="number" name="ht"></td>
+                                <td><input type="number" name="age"></td>
+                              </tr>                     
+                            </tbody>
+                          </table>
 
-                            <input type="button" onclick="bmrCalc()" value="Submit">
-                        </div>
-                    
-                    <div class="col-md-3">
+                     </form>   
+                </div>
+                
+                <div>
+                
                             <h3>Step 2: Estimate TDEE</h3>
                             <p>How active are you?</p>
                             <form id="tdeeForm">
-                                <input type="radio" name="activity" value="sedentary" checked> Sedentary: little or no exercie, desk job.
-                                <br>
-                                <input type="radio" name="activity" value="light"> Light: exercise or sports 1-3 days/week.
-                                <br>
-                                <input type="radio" name="activity" value="moderate"> Moderate: moderate exercise or sports 3-5 days/week.
-                                <br>
-                                <input type="radio" name="activity" value="heavy"> Heavy: hard exercise or sports, 6-7 days/week.
-                                <br>
-                                <input type="radio" name="activity" value="extra"> Extra: hard daily exercise or sports AND physical labor job OR training 2x per day, 7 days per week.
-                                <br>
-                                <br>
-                            </form>
-
-                            <input type="button" onclick="tdeeCalc()" value="Submit">
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>Sedentary</th>
+                                            <th>Light</th>
+                                            <th>Moderate</th>
+                                            <th>Heavy</th>
+                                            <th>Extra</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><input type="radio" name="activity" value="sedentary" checked> Little or no exercie, desk job.</td>
+                                            <td><input type="radio" name="activity" value="light"> Light: exercise or sports 1-3 days/week.</td>
+                                            <td> <input type="radio" name="activity" value="moderate"> Moderate: moderate exercise or sports 3-5 days/week.</td>
+                                            <td><input type="radio" name="activity" value="heavy"> Heavy: hard exercise or sports, 6-7 days/week.</td>
+                                            <td><input type="radio" name="activity" value="extra"> Extra: hard daily exercise or sports AND physical labor job OR training 2x per day, 7 days per week.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                        </form>
                         </div>
                     
-                    <div class="col-md-3">
+                <div>
                             <h3>Step 3: Goal Setting</h3>
                             <p>Would you like to gain, lose, or maintain weight?</p>
                             <form id="weightRateForm">
-                                How many pounds would you like to lose (or gain)?
-                                <input type="number" name="amountToLose">
-                                <br>
-                                <br>
-                                <input type="radio" name="weightRate" value="one" checked>1 lb. per week
-                                <br>
-                                <input type="radio" name="weightRate" value="two">2 lbs. per week
-                                <br>
-                                <input type="radio" name="weightRate" value="maintain">Maintain current weight
-                                <br>
-                                <input type="radio" name="weightRate" value="gain">Gain muscle
-                                <br>
-                                <br>
-                            </form>
-                        
-                            <input type="button" onclick="weightRateCalc()" value="Submit">
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>How many pounds would you like to lose (or gain)?</th>
+                                            <th>Lose 1 lb. per week</th>
+                                            <th>Lose 2 lbs. per week</th>
+                                            <th>Maintain current weight</th>
+                                            <th>Build muscle</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><input type="number" name="amountToLose"></td>
+                                            <td><input type="radio" name="weightRate" value="one" checked> 500 kcal deficit</td>
+                                            <td><input type="radio" name="weightRate" value="two"> 1000 kcal deficit</td>
+                                            <td><input type="radio" name="weightRate" value="maintain"> Caloric balance </td>
+                                            <td><input type="radio" name="weightRate" value="gain"> 300 kcal surplus </td>
+                                        </tr>
+                                    </tbody>
+                                </table>            
+                        </form>
                         </div>
                     
-                    <div class="col-md-3">
+                   
                         <div>
                             <h3>Step 4: Macro Selection</h3>
                             <p>Which diet would you like to follow?</p>
                             <form id="dietForm">
-                                How many meals do you eat per day (between 2 and 6)?
-                                <input type="number" name="mealNum" min="2" max="6">
-                                <br>
-                                <br>
-                                <input type="radio" name="diet" value="0" checked>FDA: 60% carbs, 25% protein, 15% fat
-                                <br>
-                                <br>
-                                <input type="radio" name="diet" value="1" checked>Moderate: 50% carbs, 30% protein, 20% fat
-                                <br>
-                                <br>
-                                <input type="radio" name="diet" value="2" checked>Zone: 40% carbs, 30% protein, 30% fat
-                                <br>
-                                <br>
-                                <input type="radio" name="diet" value="3" checked>Low Carb: 25% carbs, 45% protein, 30% fat
-                                <br>
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <td>How many meals do you eat per day (between 2 and 6)?</td>
+                                            <td>FDA</td>
+                                            <td>Moderate</td>
+                                            <td>Zone</td>
+                                            <td>Low Carb</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><input type="number" name="mealNum" min="2" max="6"></td>
+                                            <td><input type="radio" name="diet" value="0" checked>60% carbs, 25% protein, 15% fat</td>
+                                            <td><input type="radio" name="diet" value="1" checked>50% carbs, 30% protein, 20% fat
+                                            <td><input type="radio" name="diet" value="2" checked>40% carbs, 30% protein, 30% fat</td>
+                                            <td><input type="radio" name="diet" value="3" checked>25% carbs, 45% protein, 30% fat</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                
                             </form>
-                            <input type="button" onclick="macroCalc()" value="Submit">
+                            
                         </div>
-                    </div>
-                    
-                </div>
+                   <input type="button" onclick="bmrCalc(); tdeeCalc(); weightRateCalc(); macroCalc()" value="Submit">
                 
                 
                 
