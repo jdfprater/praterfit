@@ -12,8 +12,8 @@
     text-transform: uppercase;
 }
 
-a:hover {
-    color: white;
+a:hover, a:visited, a:link, a:active {
+    color: gray;
     text-decoration: none;
 }
 
