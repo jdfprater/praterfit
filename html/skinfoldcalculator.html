@@ -36,27 +36,57 @@
         <div class="page-menu">
             <div class="container">
                 <h2>Jackson-Polluck 7-Point Skinfold Body Fat Percentage Calculator</h2>
-                <div class="row">
-                    <div class="col-md-6">
+                    <div>
                             <h3>Enter data collected using skinfold calipers</h3>
                             <p>Ensure all site measurements are take on the right side of the body.</p>
                             <form id="bfForm">
-                            <input type="radio" name="gender" value="male">Male<br>
-                            <input type="radio" name="gender" value="female">Female<br>
-                            Weight in lbs.: <input type="number" name="wt"><br>
-                            Age: <input type="number" name="age"><br>
-                            Chest: <input type="number" name="ch"><br>
-                            Midaxillary: <input type="number" name="mid"><br>
-                            Tricep: <input type="number" name="tri"><br>
-                            Subscapular: <input type="number" name="sub"><br>
-                            Abdominal: <input type="number" name="ab"><br>
-                            Suprailliac: <input type="number" name="sup"><br>
-                            Thigh: <input type="number" name="thigh"><br>
-
+                                
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <td>Gender</td>
+                                            <td>Weight (in lbs.)</td>
+                                            <td>Age</td>
+                                            <td>Chest</td>
+                                            <td>Midaxillary</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><input type="radio" name="gender" value="male">Male<br><input type="radio" name="gender" value="female">Female</td>
+                                            <td><input type="number" name="wt"></td>
+                                            <td><input type="number" name="age"></td>
+                                            <td><input type="number" name="ch"></td>
+                                            <td><input type="number" name="mid"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                 <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <td>Triceps</td>
+                                            <td>Subscapular</td>
+                                            <td>Abdominal</td>
+                                            <td>Suprailliac</td>
+                                            <td>Thigh</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><input type="number" name="tri"></td>
+                                            <td><input type="number" name="sub"></td>
+                                            <td><input type="number" name="ab"></td>
+                                            <td><input type="number" name="sup"></td>
+                                            <td><input type="number" name="thigh"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                
+                            </form>
                             <input type="button" onclick="bfCalc()" value="Submit">
                         </div>
                     
-                    <div class="col-md-6">
+                    <div>
                              <div id="output">
                                 <h3>Result:</h3>
                                 <div id="bodyFat"></div>
