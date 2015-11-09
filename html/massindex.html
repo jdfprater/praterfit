@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+    
+        <title>BMI and FFMI Calculator</title>
+        <link rel="stylesheet" href="../stylesheet.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <script src="../js/massindexcalculator.js" type="text/javascript"></script>
+    </head>
+    
+    <body>
+        
+        <div class="nav">
+            <div class="container">
+                <ul class="pull-left">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="calculators.html">Calculators</a></li>
+                </ul>
+                <ul class="pull-right">
+                    <li><a href="novice.html">Novice 5/10/15</a></li>
+                    <li><a href="intermediate.html">Intermediate 5/10/15</a></li>
+                    <li><a href="advanced.html">Advanced 5/10/15</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="jumbotron">
+            <div class="container">
+                <h1>PraterFit</h1>
+                <p>Don't be stupid.</p>
+            </div>
+        </div>
+        
+        <div class="page-menu">
+            <div class="container">
+                <h2>Body Mass Index Calculator</h2>
+                    <div>
+                        <h3>Enter data below to determine your BMI</h3>
+                            <p>BMI is useful for large-population risk factors and is applicable if you do not engage in resistance training.</p>
+                            <form id="bmiForm">
+                                
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <td>Height (in inches)</td>
+                                            <td>Weight (in lbs.)</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><input type="number" name="ht"></td>
+                                            <td><input type="number" name="wt"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                
+                            </form>
+                            <input type="button" onclick="bmiCalc()" value="Submit">
+                        </div>
+                
+                <div class="container">
+                <h2>Fat-Free Mass Index Calculator</h2>
+                    <div>
+                        <h3>Enter data below to determine your FFMI</h3>
+                            <p>FFMI is useful in determining how close you are to your maximum muscular potential (or whether or not an indivdual is using anabolic drugs. Studies for this correlation have only been conducted in adult male populations.</p>
+                            <form id="ffmiForm">
+                                
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <td>Height</td>
+                                            <td>Weight</td>
+                                            <td>Bodyfat</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><input type="number" name="ht">in.</td>
+                                            <td><input type="number" name="wt">lbs.</td>
+                                            <td><input type="number" name="bf">%</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                
+                            </form>
+                            <input type="button" onclick="ffmiCalc()" value="Submit">
+                </div>
+                    
+                    <div>
+                             <div id="output">
+                                <h3>Result:</h3>
+                                <div id="bmiResult"></div>
+                                <div id="ffmiResult"></div>
+                            </div>
+                        </div>
+                   
+        
+    </body>
+</html>
+                                                                                                   
+                        
+                            
