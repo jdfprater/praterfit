@@ -109,3 +109,9 @@ body {
     border-radius: 10px;
     padding: 1px 10px 7px 10px;
 }
+
+table {
+    table-layout: fixed;
+    width: 100px;
+}
+}
