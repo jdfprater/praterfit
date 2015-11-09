@@ -10,9 +10,9 @@ function bmiCalc() {
     
     bmi = Math.round(mass / (ht * ht));
     
-    if (18 < bmi && bmi < 25) {
+    if (18 <= bmi && bmi <= 25) {
         risk = "You are likely at a normal bodyweight.";
-    } else if (25 < bmi && bmi < 30) {
+    } else if (25 <= bmi && bmi <= 30) {
         risk = "You are likely considered overweight.";
     } else if (bmi > 30) {
         risk = "You are likely considered obese.";
