@@ -16,6 +16,10 @@ a:hover {
     color: white;
 }
 
+a {
+    text-decoration: none;
+}
+
 .nav li {
     display: inline;
     list-style-type: none;
