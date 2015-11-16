@@ -22,9 +22,6 @@ function bmrCalc() {
 
 function tdeeCalc() {
     'use strict';
-    if (bmrCalories === 0) {
-        document.getElementById("tdeeDisplay").innerHTML = "Fill out the information in step 1 before proceeding.";
-    } else {
         var x = document.getElementById("tdeeForm"),
             activity = x.elements.activity.value;
         switch (activity) {
@@ -45,16 +42,13 @@ function tdeeCalc() {
             break;
         }
         document.getElementById("tdeeDisplay").innerHTML = "Your body uses " + tdeeCalories + " Calories per day to maintain it's cellular processes AND its activity.";
-    }
 }
+
 
 /* calculates the amount of calories need to lose 1 or 2 pounds per week by getting the weightRateForm and assigning it to "x", figures out which button has been selected and assigns a caloric equivalent number to be subracted from TDEE necessary to achieve the desired result, then displays the result in the weightRateDisplay div */
 
 function weightRateCalc() {
     'use strict';
-    if (bmrCalories === 0 || tdeeCalories === 0) {
-        document.getElementById("weightRateDisplay").innerHTML = "Fill out the information in the preceeding steps before continuing.";
-    } else {
         var x = document.getElementById("weightRateForm"),
             weightRate = x.elements.weightRate.value,
             amountToLose = x.elements.amountToLose.value,
@@ -88,7 +82,6 @@ function weightRateCalc() {
         } else {
             document.getElementById("howLongDisplay").innerHTML = "You should not add or lose weight.";
         }
-    }
 }
 
 /* calculates the number of grams of macronutrients according to a diet selected from caloriesPerDay. Gets dietForm and assigns it to "x", figures out which diet button has been selected and gets the dietType associated with the number value of the diet button. Also gets the number of meals from the range on the html form. Assigns variables for macronutrients associated with the macros percentages by calling methods on each macro and multiplying it by the caloriesPerDay, then converting them into grams.
@@ -97,9 +90,6 @@ function weightRateCalc() {
 
 function macroCalc() {
     'use strict';
-    if (bmrCalories === 0 || tdeeCalories === 0 || caloriesPerDay === 0) {
-        document.getElementById("macroDisplayMeal").innerHTML = "Fill out the information in the preceeding steps before continuing.";
-    } else {
         var x = document.getElementById("dietForm"),
             mealNum = x.elements.mealNum.value,
             diet = x.elements.diet.value,
@@ -120,5 +110,4 @@ function macroCalc() {
         document.getElementById("macroDisplayDay").innerHTML = "You must eat " + carbs + "g Carbs per day, " + protein + "g Protein per day, and " + fat + "g fat per day.";
 
         document.getElementById("macroDisplayMeal").innerHTML = "That's " + carbsMeal + "g of carbs per meal, " + proteinMeal + "g of protein, and " + fatMeal + "g of fat.";
-    }
 }
