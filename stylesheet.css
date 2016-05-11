@@ -12,7 +12,7 @@
 }
 
 .jumbotron {
-    background-image: url(pictures/backgroundbarbell.jpg);
+    background-image: url(//pictures/backgroundbarbell.jpg);
     height: 400px;
     background-repeat: no-repeat;
     background-size: cover;
