@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+    
+        <title>1RM Calculator</title>
+        <script type="text/javascript" src="../scripts/jquery-1.11.3.js"></script>
+        <script type="text/javascript" src="../scripts/bootstrap.js"></script>
+        <link rel="stylesheet" href="../stylesheet.css">
+        <link rel="stylesheet" href="../scripts/bootstrap.min.css">
+        <script src="../js/one_rm.js" type="text/javascript"></script>
+    </head>
+    
+    <body>
+        
+        <div class="nav">
+            <div class="container">
+                <ul class="pull-left">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../blog.html">Blog</a></li>
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Calculators <span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="caloriecalculator.html">BMR Calculator</a></li>
+                        <li><a href="one_rm.html">1RM Calculator</a></li>
+                        <li><a href="skinfoldcalculator.html">Skinfold Calculator</a></li>
+                        <li><a href="massindex.html">Body Mass Index Calculator</a></li>
+                        <li><a href="weightcalories.html">Activity Calculator</a></li>
+                        <li><a href="heartcalculator.html">Heart Rate Zones</a></li>
+                      </ul>
+                    </li>  
+                </ul>
+                <ul class="pull-right">
+                    <li><a href="novice.html">Novice 5/10/15</a></li>
+                    <li><a href="intermediate.html">Intermediate 5/10/15</a></li>
+                    <li><a href="advanced.html">Advanced 5/10/15</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="jumbotron">
+            <div class="container">
+                <h1>PraterFit</h1>
+            </div>
+        </div>
+        
+        <div class="page-menu">
+            <div class="container">
+                <h2>Karvonen Formula for Prescribing Aerobic Exercise </h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <h3>Max Heart Rate Protocol</h3>
+                            <p>Use an 8" step (almost any step in your home or in a club will do) and perform a 3-minute step test.</p>
+                                <p>Follow these instructions:</p>
+                                <ol>
+                                    <li>After your warm-up, step up and down in a four-count sequence as follows: right foot up, left up, right down, left down. Each time you move a foot up or down, it counts as one step.</li>
+                                    <li>Count "up, up, down, down" for one set, with 20 sets to the minute. It is very important that you don't speed up the pace--keep it regular.</li>
+                                    <li>After 2 minutes, you'll need to monitor your heart rate for the last minute.</li>
+                                    <li>To check, use either a heart rate monitor or check your pulse; count your heart beats for 6 seconds and multiply by 10 for beats per minute.</li>
+                                    <li>Add to your last minute's heart rate average one of the following numbers:<br><br>
+                                        1. Poor Shape: +55 bpm<br><br>
+                                        2. Average Shape: +65 bpm<br><br>
+                                        3. Excellent Shape: +75 bpm</li>
+                                </ol>
+                                <p>Your result should be pretty close to your Max HR. (My last-minute heart rate average might be something like 120 bpm, to which I'd add 75 bpm, bringing the total to 195 bpm.)</p>
+                    </div>
+                    
+                    
+                    <div class="col-md-4">
+                            <h3>Enter data collected from the Heart Rate Protocol.</h3>
+                            <p>Repetitions must be between 1 and 10.</p>
+                        
+                            <form id="wtForm">
+                                Weight Lifted: <input type="number" name="wt"><br>
+                                Reps Performed: <input type="number" name="reps"><br>
+
+                                <input type="button" onclick="rmCalc()" value="Submit">
+                            </form>
+                    </div>
+                    
+                    <div class="col-md-4">
+                            <div id="output">
+                                 <h3>Result:</h3>
+                                     <div id="repMaxPercent"></div>
+                                     <div id="repMax"></div>
+                             </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </body>
+</html>
