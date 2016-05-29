@@ -126,3 +126,6 @@ table {
     width: 100px;
 }
 
+a:hover {
+    text-decoration: none;
+}
