@@ -15,6 +15,7 @@ function heartZones() {
         rhr = Number(x.elements.RHR.value);
     
     maxHR = Math.round(207 - (0.7 * age));
+    rhr = Number(rhr)
     HRR = maxHR - rhr;
         
     z1 = Math.round((HRR * 0.5) + rhr);
