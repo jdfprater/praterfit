@@ -1,3 +1,11 @@
+var maxHR = 0;
+    HRR = 0;
+    z1 = 0;
+    z2 = 0;
+    z3 = 0;
+    z4 = 0;
+    z5 = 0;
+
 function heartZones() {
     'use strict';
     var x = document.getElementById("heartForm"),
@@ -6,6 +14,7 @@ function heartZones() {
     
     maxHR = Math.round(207 - (0.7 * age));
     HRR = maxHR - rhr;
+        
     z1 = Math.round((HRR * 0.5) + rhr);
     z2 = Math.round((HRR * 0.6) + rhr);
     z3 = Math.round((HRR * 0.7) + rhr);
@@ -17,6 +26,5 @@ function heartZones() {
      document.getElementById("zone3").innerHTML = z3 + " BPM";
      document.getElementById("zone4").innerHTML = z4 + " BPM";
      document.getElementById("zone5").innerHTML = z5 + " BPM";
-
     
 }
