@@ -1,5 +1,7 @@
 var maxHR = 0,
     HRR = 0,
+    age = 0,
+    rhr = 0,
     z1 = 0,
     z2 = 0,
     z3 = 0,
