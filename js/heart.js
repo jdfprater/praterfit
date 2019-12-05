@@ -1,6 +1,6 @@
 function heartZones() {
     'use strict';
-    //document.getElementById("heartForm").innerHTML = "";
+    document.getElementById("heartForm").innerHTML = "";
     var x = document.getElementById("heartForm"),
         age = x.elements.Age.value,
         rhr = x.elements.RHR.value,
