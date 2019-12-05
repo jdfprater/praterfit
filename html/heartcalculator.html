@@ -3,7 +3,7 @@
 
     <head>
     
-        <title>1RM Calculator</title>
+        <title>Heart Rate Zone Calculator</title>
         <script type="text/javascript" src="../scripts/jquery-1.11.3.js"></script>
         <script type="text/javascript" src="../scripts/bootstrap.js"></script>
         <link rel="stylesheet" href="../stylesheet.css">
@@ -46,34 +46,39 @@
         
         <div class="page-menu">
             <div class="container">
-                <h2>Karvonen Formula for Prescribing Aerobic Exercise </h2>
+                <h2>12 Minute Walk/Run Test </h2>
                 <div class="row">
                     <div class="col-md-4">
-                        <h3>Max Heart Rate Protocol</h3>
-                            <p>Use an 8" step (almost any step in your home or in a club will do) and perform a 3-minute step test.</p>
+                        <h3>Aerobic Capacity Test</h3>
+                            <p>Warm up on the treadmill at a level incline for at least 3 minutes at any speed. Reset the treadmill distance at the end of the warmup.</p>
                                 <p>Follow these instructions:</p>
                                 <ol>
-                                    <li>After your warm-up, step up and down in a four-count sequence as follows: right foot up, left up, right down, left down. Each time you move a foot up or down, it counts as one step.</li>
-                                    <li>Count "up, up, down, down" for one set, with 20 sets to the minute. It is very important that you don't speed up the pace--keep it regular.</li>
-                                    <li>After 2 minutes, you'll need to monitor your heart rate for the last minute.</li>
-                                    <li>To check, use either a heart rate monitor or check your pulse; count your heart beats for 6 seconds and multiply by 10 for beats per minute.</li>
-                                    <li>Add to your last minute's heart rate average one of the following numbers:<br><br>
-                                        1. Poor Shape: +55 bpm<br><br>
-                                        2. Average Shape: +65 bpm<br><br>
-                                        3. Excellent Shape: +75 bpm</li>
+                                    <li>Push yourself as hard as possible during the 12 minutes. Walk if necessary but endeavour to press through until the end of the 12 minutes.</li>
+                                    <li>After 12 minutes has finished, record the distance.</li>
+                                      <li>Resort to the table to check score based on age and gender.<br><br>
+                                        Female:
+                                        1. Low: <br><br>
+                                        2. Marginal: <br><br>
+                                        3. Good: <br><br>
+                                        4. High: <br><br>
+                                          
+                                        Male: 
+                                        1. Low: <br><br>
+                                        2. Marginal: <br><br>
+                                        3. Good: <br><br>
+                                        4. High: <br><br>
+                                          
+                                    </li>
                                 </ol>
-                                <p>Your result should be pretty close to your Max HR. (My last-minute heart rate average might be something like 120 bpm, to which I'd add 75 bpm, bringing the total to 195 bpm.)</p>
                     </div>
                     
                     
                     <div class="col-md-4">
-                            <h3>Enter data collected from the Heart Rate Protocol.</h3>
+                            <h3>Enter age and Resting Heart Rate to determine heart rate training zones.</h3>
                         
                             <form id="heartForm">
                                 Age: <input type="number" name="Age"><br>
                                 Resting Heart Rate: <input type="number" name="RHR"><br>
-
-                               
                             </form>
                         <input type="button" onclick="heartZones()" value="Submit">
                     </div>
@@ -86,8 +91,6 @@
                                     Zone 3: <div id="zone3"></div>
                                     Zone 4: <div id="zone4"></div>
                                     Zone 5: <div id="zone5"></div>
-                                     
-                                
                              </div>
                     </div>
                 </div>
