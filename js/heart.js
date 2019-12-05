@@ -11,11 +11,11 @@ function heartZones() {
         z4 = Math.round((HRR * 0.8) + rhr),
         z5 = Math.round((HRR * 0.9) + rhr);
      
-     document.getElementById("zone1").innerHTML = z1 + "BPM";
-     document.getElementById("zone2").innerHTML = z2 + "BPM";
-     document.getElementById("zone3").innerHTML = z3 + "BPM";
-     document.getElementById("zone4").innerHTML = z4 + "BPM";
-     document.getElementById("zone5").innerHTML = z5 + "BPM";
+     document.getElementById("zone1").innerHTML = z1 + " BPM";
+     document.getElementById("zone2").innerHTML = z2 + " BPM";
+     document.getElementById("zone3").innerHTML = z3 + " BPM";
+     document.getElementById("zone4").innerHTML = z4 + " BPM";
+     document.getElementById("zone5").innerHTML = z5 + " BPM";
 
     
 }
