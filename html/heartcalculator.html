@@ -60,11 +60,32 @@
                                 <ol>
                                     <li>Push yourself as hard as possible during the 12 minutes. Walk if necessary but endeavour to press through until the end of the 12 minutes.</li>
                                     <li>After 12 minutes has finished, record the distance.</li>
-                                    <li>Resort to the table to check score based on age and gender.<br><br>
-                                    </li>
+                                    <li>Resort to the table to check score based on age and gender.</li>
                                 </ol>
+                    </div>
+                    
+                    
+                    <div class="col-md-4">
+                            <h3>Enter age and Resting Heart Rate to determine heart rate training zones.</h3>
                         
-                        <h3>12-Minute Walk/Run (Age in Years)</h3>
+                            <form id="heartForm">
+                                Age: <input type="number" name="Age"><br>
+                                Resting Heart Rate: <input type="number" name="RHR"><br>
+                            </form>
+                        <input type="button" onclick="heartZones()" value="Submit">
+                    </div>
+                    
+                    <div class="col-md-4">
+                            <div id="output">
+                                 <h3>Result:</h3>
+                                    Zone 1: <div id="zone1"></div>
+                                    Zone 2: <div id="zone2"></div>
+                                    Zone 3: <div id="zone3"></div>
+                                    Zone 4: <div id="zone4"></div>
+                                    Zone 5: <div id="zone5"></div>
+                             </div>
+                    </div>
+                 <h3>12-Minute Walk/Run (Age in Years)</h3>
                             <table style="width:100%">
                               <tr>
                                 <th>Classification</th>
@@ -102,29 +123,6 @@
                                 <td>&lt1.10</td>
                               </tr>
                             </table>
-                    </div>
-                    
-                    
-                    <div class="col-md-4">
-                            <h3>Enter age and Resting Heart Rate to determine heart rate training zones.</h3>
-                        
-                            <form id="heartForm">
-                                Age: <input type="number" name="Age"><br>
-                                Resting Heart Rate: <input type="number" name="RHR"><br>
-                            </form>
-                        <input type="button" onclick="heartZones()" value="Submit">
-                    </div>
-                    
-                    <div class="col-md-4">
-                            <div id="output">
-                                 <h3>Result:</h3>
-                                    Zone 1: <div id="zone1"></div>
-                                    Zone 2: <div id="zone2"></div>
-                                    Zone 3: <div id="zone3"></div>
-                                    Zone 4: <div id="zone4"></div>
-                                    Zone 5: <div id="zone5"></div>
-                             </div>
-                    </div>
                 </div>
             </div>
         </div>
